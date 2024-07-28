@@ -530,6 +530,10 @@ span {
         width: 100%;
     }
 
+    .about-img img {
+        width: 90vw;
+    }
+
     .footer {
         flex-direction: column-reverse;
     }
