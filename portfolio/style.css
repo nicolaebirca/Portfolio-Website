@@ -530,6 +530,11 @@ span {
         width: 100%;
     }
 
+    .home-img img {
+        width: 90vw;
+        margin-top: 2rem;
+    }
+
     .about-img img {
         width: 90vw;
     }
