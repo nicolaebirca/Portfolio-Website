@@ -278,7 +278,8 @@ span {
 }
 
 .portfolio {
-    background: var(--second-bg-color);
+    background-color: #323946;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 .portfolio h2 {
