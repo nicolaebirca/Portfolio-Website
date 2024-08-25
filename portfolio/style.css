@@ -42,7 +42,8 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background-color: #1f242d;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     display: flex;
     justify-content: space-between;
     align-items: center;
