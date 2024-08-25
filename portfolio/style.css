@@ -26,8 +26,7 @@ html {
 }
 
 body {
-    background-color: #cc8800;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
