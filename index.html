@@ -1,213 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="https://nicolaeportfolio.netlify.app/" class="logo">Portfo<span>lio.</span></a>
+      <a href="https://nicolaeportfolio.netlify.app/" class="logo"
+        >Portfo<span>lio.</span></a
+      >
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Light/Dark Mode Switch -->
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider round">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </span>
+      </label>
     </header>
 
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me,</h3>
-            <h1>Nicolae Birca</h1>
-            <h3><span class="multiple-text"></span></h3>
-            <p>"I am a frontend developer passionate about creating interactive and intuitive web experiences. I enjoy turning concepts into functional designs using the latest technologies and best practices."</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100005066268816" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.linkedin.com/in/birca-nicolae-914472308/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://www.instagram.com/nicu_birca/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/nicolaebirca" target="_blank"><i class='bx bxl-github'></i></a>
-            </div>
-            <a href="CV/Nicolae Birca CV english.pdf" download="Nicolae Birca CV english.pdf" class="btn">Download CV</a>
+      <div class="home-content">
+        <h3>Hello, It's Me,</h3>
+        <h1>Nicolae Birca</h1>
+        <h3><span class="multiple-text"></span></h3>
+        <p>
+          "I am a frontend developer passionate about creating interactive and
+          intuitive web experiences. I enjoy turning concepts into functional
+          designs using the latest technologies and best practices."
+        </p>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100005066268816"
+            target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/birca-nicolae-914472308/"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com/nicu_birca/" target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://github.com/nicolaebirca" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+        <a
+          href="CV/Nicolae Birca CV english.pdf"
+          download="Nicolae Birca CV english.pdf"
+          class="btn"
+          >Download CV</a
+        >
+      </div>
 
-        <div class="home-img">
-            <img src="images/portfolio1.PNG" alt="homeimage">
-        </div>
+      <div class="home-img">
+        <img src="images/portfolio1.PNG" alt="homeimage" />
+      </div>
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/portfolio2.PNG" alt="about-img">
-        </div>
+      <div class="about-img">
+        <img src="images/portfolio2.PNG" alt="about-img" />
+      </div>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>I'm Nicolae and I'm a Developer. I have a background in telecommunications and a strong interest in solving complex problems. I decided to follow my passion for technology and web development. Although I graduated as a telecommunications technician, I started learning programming through online courses and became skilled in JavaScript and web development. I made this change because I want to create innovative digital solutions that help people. I've seen how technology is important in telecommunications and many other areas, and I want to contribute to this growing field. Learning new things and working on creative projects excite me. I am very ambitious and never give up in difficult situations. I want to keep learning and become better at frontend development. Meeting new people in the tech world and working on interesting projects are my goals.</p>
-            <a href="CV/Nicolae Birca CV english.pdf" download="Nicolae Birca CV english.pdf" class="btn">Read More</a>
-        </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>
+          I'm Nicolae and I'm a Developer. I have a background in
+          telecommunications and a strong interest in solving complex problems.
+          I decided to follow my passion for technology and web development.
+          Although I graduated as a telecommunications technician, I started
+          learning programming through online courses and became skilled in
+          JavaScript and web development. I made this change because I want to
+          create innovative digital solutions that help people. I've seen how
+          technology is important in telecommunications and many other areas,
+          and I want to contribute to this growing field. Learning new things
+          and working on creative projects excite me. I am very ambitious and
+          never give up in difficult situations. I want to keep learning and
+          become better at frontend development. Meeting new people in the tech
+          world and working on interesting projects are my goals.
+        </p>
+        <a
+          href="CV/Nicolae Birca CV english.pdf"
+          download="Nicolae Birca CV english.pdf"
+          class="btn"
+          >Read More</a
+        >
+      </div>
     </section>
 
     <section class="skills" id="skills">
-        <div class="skills-header">
-            <h2 class="heading">My <span>skills</span></h2>
+      <div class="skills-header">
+        <h2 class="heading">My <span>skills</span></h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/html5.png"
+                class="skill-icon"
+                alt="html5-image"
+              />
+            </div>
+            <h3>HTML 5</h3>
+          </div>
+          <p>
+            "I have extensive experience in HTML5, creating modern, responsive
+            web pages with clean, efficient code and a strong user focus."
+          </p>
         </div>
-        <div class="skills-container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/html5.png" class="skill-icon" alt="html5-image">
-                    </div>
-                    <h3>HTML 5</h3>
-                </div>
-                <p>"I have extensive experience in HTML5, creating modern, responsive web pages with clean, efficient code and a strong user focus."</p>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/css3.png"
+                class="skill-icon"
+                alt="css3-image"
+              />
             </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/css3.png" class="skill-icon" alt="css3-image">
-                    </div>
-                    <h3>CSS 3</h3>
-                </div>
-                <p>"I am highly skilled in CSS3, creating visually appealing and responsive designs with a focus on performance and user experience."</p>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/javascript.png" class="skill-icon" alt="javascript-image">
-                    </div>
-                    <h3>JavaScript</h3>
-                </div>
-                <p>"I possess strong expertise in JavaScript, developing dynamic, interactive web applications with an emphasis on functionality."</p>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/bootstrap.png" class="skill-icon" alt="bootstrap-image">
-                    </div>
-                    <h3>Bootstrap</h3>
-                </div>
-                <p>"I have solid experience with Bootstrap, crafting responsive, mobile-first websites that ensure consistent design and seamless user interaction."</p>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/react.png" class="skill-icon" alt="react-image">
-                    </div>
-                    <h3>React</h3>
-                </div>
-                <p>"I am proficient in React, building scalable, high-performance web applications with a focus on component-based architecture and seamless user experiences."</p>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="images/skill-logo/terminal.png" class="skill-icon" alt="terminal-image">
-                    </div>
-                    <h3>Terminal</h3>
-                </div>
-                <p>"I have extenssive experience with Terminal, efficiently managing and automating tasks through command-line tools and scripting for streamlined workflows."</p>
-            </div>
+            <h3>CSS 3</h3>
+          </div>
+          <p>
+            "I am highly skilled in CSS3, creating visually appealing and
+            responsive designs with a focus on performance and user experience."
+          </p>
         </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/javascript.png"
+                class="skill-icon"
+                alt="javascript-image"
+              />
+            </div>
+            <h3>JavaScript</h3>
+          </div>
+          <p>
+            "I possess strong expertise in JavaScript, developing dynamic,
+            interactive web applications with an emphasis on functionality."
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/bootstrap.png"
+                class="skill-icon"
+                alt="bootstrap-image"
+              />
+            </div>
+            <h3>Bootstrap</h3>
+          </div>
+          <p>
+            "I have solid experience with Bootstrap, crafting responsive,
+            mobile-first websites that ensure consistent design and seamless
+            user interaction."
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/react.png"
+                class="skill-icon"
+                alt="react-image"
+              />
+            </div>
+            <h3>React</h3>
+          </div>
+          <p>
+            "I am proficient in React, building scalable, high-performance web
+            applications with a focus on component-based architecture and
+            seamless user experiences."
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img
+                src="images/skill-logo/terminal.png"
+                class="skill-icon"
+                alt="terminal-image"
+              />
+            </div>
+            <h3>Terminal</h3>
+          </div>
+          <p>
+            "I have extenssive experience with Terminal, efficiently managing
+            and automating tasks through command-line tools and scripting for
+            streamlined workflows."
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>Kropp-fitness</h4>
-                    <p>"I worked on this project with HTML5, CSS, and Figma."</p>
-                    <a href="https://github.com/nicolaebirca/Kropp-fittness" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio4.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>TinDog Project with Bootstrap</h4>
-                    <p>This project was created with the framework Bootstrap.</p>
-                    <a href="https://github.com/nicolaebirca/TinDog-project" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>Personal Website</h4>
-                    <p>"This is my personal website created with HTML5, CSS, and JavaScript."</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>"In progress"</h4>
-                    <p>"In the near future, I will add this project. Thank you."</p>
-                    <a href="https://github.com/nicolaebirca" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio7.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>"In progress"</h4>
-                    <p>"In the near future, I will add this project. Thank you."</p>
-                    <a href="https://github.com/nicolaebirca" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio8.jpg" alt="coding-photo">
-                <div class="portfolio-layer">
-                    <h4>"In progress"</h4>
-                    <p>"In the near future, I will add this project. Thank you."</p>
-                    <a href="https://github.com/nicolaebirca" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/portfolio3.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>Kropp-fitness</h4>
+            <p>"I worked on this project with HTML5, CSS, and Figma."</p>
+            <a
+              href="https://github.com/nicolaebirca/Kropp-fittness"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
         </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio4.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>TinDog Project with Bootstrap</h4>
+            <p>This project was created with the framework Bootstrap.</p>
+            <a
+              href="https://github.com/nicolaebirca/TinDog-project"
+              target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio5.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>Personal Website</h4>
+            <p>
+              "This is my personal website created with HTML5, CSS, and
+              JavaScript."
+            </p>
+            <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio6.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>"In progress"</h4>
+            <p>"In the near future, I will add this project. Thank you."</p>
+            <a href="https://github.com/nicolaebirca" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio7.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>"In progress"</h4>
+            <p>"In the near future, I will add this project. Thank you."</p>
+            <a href="https://github.com/nicolaebirca" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/portfolio8.jpg" alt="coding-photo" />
+          <div class="portfolio-layer">
+            <h4>"In progress"</h4>
+            <p>"In the near future, I will add this project. Thank you."</p>
+            <a href="https://github.com/nicolaebirca" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+      <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <div class="input-box">
-                <input type="text" name="full_name" placeholder="Full Name">
-                <input type="email" name="Email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="Number" placeholder="Mobile Number">
-                <input type="text" name="Email_Subject" placeholder="Email Subject">
-            </div>
-            <input type="hidden" name="access_key" value="f4081bfd-910b-4541-aa9b-06148246d734">
-            <textarea name="Your_message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input-box">
+          <input type="text" name="full_name" placeholder="Full Name" />
+          <input type="email" name="Email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" name="Number" placeholder="Mobile Number" />
+          <input type="text" name="Email_Subject" placeholder="Email Subject" />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="f4081bfd-910b-4541-aa9b-06148246d734"
+        />
+        <textarea
+          name="Your_message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
     </section>
 
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Nicolae Birca | All Rights Reserved.</p>
-        </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Nicolae Birca | All Rights Reserved.</p>
+      </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </footer>
-
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -217,5 +344,5 @@
 
     <!-- custom js -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
