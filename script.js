@@ -35,13 +35,12 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-
-    /*============ sticky navbar ================*/
-    ScrollReveal({
-        //  reset: true,
-         distance: '80px',
-         duration: 2000,
-         delay: 200
+/*============ sticky navbar ================*/
+ScrollReveal({
+    //  reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -49,19 +48,16 @@ ScrollReveal().reveal('.home-img, .skills-container, .portfolio-box, .contact fo
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-
 /*============ typed js ================*/
 const typed = new Typed('.multiple-text', {
-    strings: ["Welcome!", "And I'm a Frontend Developer", "I Create for You"],
+    strings: ["And I'm a Frontend Developer", "I Create for You"],
     typeSpeed: 90,
     backSpeed: 80,
     backDelay: 1000,
     loop: true
 });
 
-
 const themeToggle = document.getElementById("theme-toggle");
-
 
 if(localStorage.getItem('theme') === 'dark') {
     document.body.classList.add("dark-mode");
