@@ -27,8 +27,7 @@ window.onscroll = () => {
     });
     /*============ sticky navbar ================*/
     let header = document.querySelector('header');
-
-    header.classList.toggle('sticky', window.scrollY > 100)
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     /*============ remove toggle icon and navbar when click navbar link (scroll) ================*/
     menuIcon.classList.remove('bx-x');
@@ -37,7 +36,6 @@ window.onscroll = () => {
 
 /*============ sticky navbar ================*/
 ScrollReveal({
-    //  reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
@@ -77,3 +75,67 @@ themeToggle.addEventListener("change", () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+document.getElementById('language-selector').addEventListener('change', function(event) {
+    changeLanguage(event.target.value);
+});
+
+// Obiect cu textele pentru fiecare limbă
+const translations = {
+    en: {
+      homeTitle: "Hello, It's Me,",
+      name: "Nicolae Birca",
+      aboutHeading: "About Me",
+      skillsHeading: "My skills",
+      contactHeading: "Contact Me!",
+      // adaugă mai multe traduceri după necesitate
+    },
+    de: {
+      homeTitle: "Hallo, es ist mich,",
+      name: "Nicolae Birca",
+      aboutHeading: "Über mich",
+      skillsHeading: "Meine Fähigkeiten",
+      contactHeading: "Kontaktiere mich!",
+      // adaugă mai multe traduceri după necesitate
+    }
+  };
+  
+  // Selectează elementele care trebuie traduse
+  const homeTitleElement = document.querySelector('.home-content h3');
+  const nameElement = document.querySelector('.home-content h1');
+  const aboutHeadingElement = document.querySelector('.about-content .heading');
+  const skillsHeadingElement = document.querySelector('.skills-header .heading');
+  const contactHeadingElement = document.querySelector('.contact .heading');
+  
+  // Funcție pentru a schimba limba
+  function changeLanguage(language) {
+    homeTitleElement.textContent = translations[language].homeTitle;
+    nameElement.textContent = translations[language].name;
+    aboutHeadingElement.innerHTML = translations[language].aboutHeading;
+    skillsHeadingElement.innerHTML = translations[language].skillsHeading;
+    contactHeadingElement.innerHTML = translations[language].contactHeading;
+  }
+  
+  // Ascultător de evenimente pentru selectorul de limbă
+  const languageSelector = document.getElementById('language-selector');
+  languageSelector.addEventListener('change', (event) => {
+    changeLanguage(event.target.value);
+  });
+  
+  // Setează limba implicită (de exemplu, engleză)
+  changeLanguage('en');
+  
+
+  document.getElementById('language-selector').addEventListener('change', function() {
+    let selectedLanguage = this.value;
+    
+    // Selectează toate elementele care au atributul "data"
+    let elements = document.querySelectorAll('[data-en]');
+    
+    elements.forEach(element => {
+        let translation = element.getAttribute('data-' + selectedLanguage); // Alege traducerea corespunzătoare
+        element.innerText = translation; // Schimbă textul
+    });
+});
+
+

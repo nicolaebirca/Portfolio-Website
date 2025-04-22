@@ -112,6 +112,19 @@ input:checked + .slider .moon-icon {
   opacity: 0;
 }
 
+.language-switch {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  #language-selector {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
