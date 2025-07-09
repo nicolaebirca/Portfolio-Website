@@ -266,6 +266,10 @@ span {
   transition: var(--transition);
 }
 
+a.btn {
+  color: #263183;
+}
+
 .btn:hover {
   box-shadow: none;
 }
@@ -596,6 +600,7 @@ span {
 
   .home-content h3 {
     font-size: 2.6rem;
+    margin-top: 16px;
   }
 
   .home-content h1 {
